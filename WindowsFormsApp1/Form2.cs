@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -50,7 +44,13 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("TEST");
+            ccc c = new ccc();
+            MessageBox.Show(c.abc);
         }
+    }
+
+    public class ccc
+    {
+        public string abc { get; set; } = "aaa"; 
     }
 }
