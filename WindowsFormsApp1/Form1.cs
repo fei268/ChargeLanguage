@@ -13,6 +13,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public Form1(string chr)
+        {
+            InitializeComponent();
+            c.chr = chr;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             if (c.chr == null)
